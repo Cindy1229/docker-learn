@@ -88,9 +88,9 @@
         const contEdit = document.getElementById('container-edit');
         const cont = document.getElementById('container');
 
-        document.getElementById('input-name').value = document.getElementById('name').textContent;
-        document.getElementById('input-email').value = document.getElementById('email').textContent;
-        document.getElementById('input-interests').value = document.getElementById('interests').textContent;
+        document.getElementById('name').value = document.getElementById('name').textContent;
+        document.getElementById('email').value = document.getElementById('email').textContent;
+        document.getElementById('interests').value = document.getElementById('interests').textContent;
 
         cont.style.display = 'none';
         contEdit.style.display = 'block';
@@ -106,7 +106,7 @@
         <hr />
         <span>Interests: </span><h3 id='interests'>coding</h3>
         <hr />
-        <button class='button' onclick="updateProfile()">Edit Profile</button>
+        <button class='button' onclick="updateProfile()"">Edit Profile</button>
     </div>
     <div class='container' id='container-edit'>
         <h1>User profile</h1>
